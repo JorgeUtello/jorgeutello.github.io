@@ -26,6 +26,12 @@
 				<img src="https://i.imgur.com/t7Refuq.jpeg" alt="Mi Foto">
 			</div>
 		</div>
+		<div class="scroll-btn" id="scroll-down">
+            <span>Descubre más</span>
+            <div class="chevron">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
 	</header>
 
 	<nav>
@@ -324,6 +330,15 @@
 			});
 		});
 
+		// Botón de scroll hacia abajo
+		document.getElementById('scroll-down').addEventListener('click', function() {
+                const technologiesSection = document.getElementById('technologies');
+                window.scrollTo({
+                    top: technologiesSection.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+		// email anti bot
 		const user = 'jorgeutello';
 		const domain = 'gmail.com';
 		document.getElementById('email').innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
