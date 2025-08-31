@@ -633,3 +633,9 @@ footer .container {
     font-size: 12px;
 	z-index: 999;
 }
+
+.workana {
+	margin-bottom: 1rem;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.7);
+}
